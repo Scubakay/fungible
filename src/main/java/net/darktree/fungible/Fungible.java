@@ -1,6 +1,5 @@
 package net.darktree.fungible;
 
-import dev.kikugie.fletching_table.annotation.fabric.Entrypoint;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -8,9 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Locale;
 
-@Entrypoint
 public class Fungible implements ModInitializer {
-
 	public static final String NAME = "Fungible";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 

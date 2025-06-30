@@ -2,13 +2,11 @@ package net.darktree.fungible.mixin.dfu;
 
 import com.mojang.datafixers.DSL;
 import com.mojang.datafixers.types.Type;
-import dev.kikugie.fletching_table.annotation.MixinEnvironment;
 import net.minecraft.util.Util;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@MixinEnvironment
 @Mixin(Util.class)
 public class UtilMixin {
 
