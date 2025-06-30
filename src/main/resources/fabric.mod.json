@@ -21,11 +21,23 @@
 	},
 	"license": "LGPL-3.0",
 	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.darktree.fungible.Fungible"
+		],
+		"client": [
+			"net.darktree.fungible.client.FungibleClient"
+		]
+	},
 	"mixins": [
-		"fungible.mixins.json"
+		"fungible.mixins.json",
+		{
+			"config": "fungible.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
-		"fabricloader": "*",
-		"minecraft": ">=1.19.2"
+		"fabricloader": ">=0.15",
+		"minecraft": "${mcdep}"
 	}
 }
