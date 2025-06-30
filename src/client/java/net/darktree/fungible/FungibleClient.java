@@ -1,4 +1,4 @@
-package net.darktree.fungible.client;
+package net.darktree.fungible;
 
 import net.fabricmc.api.ClientModInitializer;
 

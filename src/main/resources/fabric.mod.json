@@ -26,7 +26,7 @@
 			"net.darktree.fungible.Fungible"
 		],
 		"client": [
-			"net.darktree.fungible.client.FungibleClient"
+			"net.darktree.fungible.FungibleClient"
 		]
 	},
 	"mixins": [
@@ -38,6 +38,6 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15",
-		"minecraft": "${mcdep}"
+		"minecraft": "${range}"
 	}
 }

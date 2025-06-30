@@ -1,6 +1,6 @@
 package net.darktree.fungible.mixin.auth;
 
-import net.minecraft.client.ProfileKeysImpl;
+import net.minecraft.client.util.ProfileKeysImpl;
 import net.minecraft.network.encryption.PlayerKeyPair;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
