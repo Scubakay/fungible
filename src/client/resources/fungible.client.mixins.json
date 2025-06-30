@@ -3,14 +3,7 @@
     "package": "net.darktree.fungible.mixin",
     "compatibilityLevel": "JAVA_17",
     "plugin": "net.darktree.fungible.FungibleMixinPlugin",
-    "mixins": [
-        "auth.ProfileKeysImplMixin",
-        "auth.ShutAuthMixin",
-        "screen_fade.SplashOverlayMixin",
-        "screen_fade.TitleScreenMixin",
-        "screen_skip.AccessibilityScreenMixin",
-        "screen_skip.CreateWorldScreenMixin"
-    ],
+    "mixins": [],
     "injectors": {
         "defaultRequire": 1
 	}

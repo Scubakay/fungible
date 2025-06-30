@@ -21,14 +21,6 @@
 	},
 	"license": "LGPL-3.0",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.darktree.fungible.Fungible"
-		],
-		"client": [
-			"net.darktree.fungible.FungibleClient"
-		]
-	},
 	"mixins": [
 		"fungible.mixins.json",
 		{

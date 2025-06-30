@@ -4,9 +4,9 @@ plugins {
     `maven-publish`
     id("fabric-loom")
     //id("dev.kikugie.j52j")
-    //kotlin("jvm") version "2.1.21"
-    //id("com.google.devtools.ksp") version "2.1.21-2.0.2"
-    //id("dev.kikugie.fletching-table.fabric") version "0.1.0-alpha.6"
+    kotlin("jvm") version "2.1.21"
+    id("com.google.devtools.ksp") version "2.1.21-2.0.2"
+    id("dev.kikugie.fletching-table.fabric") version "0.1.0-alpha.6"
     id("me.modmuss50.mod-publish-plugin")
     //id("com.github.johnrengelman.shadow") version "8.1.1"
 
@@ -108,11 +108,14 @@ loom {
     }
 }
 
-//fletchingTable {
-//    mixins.all { // Name should match an existing source set
-//        default = "fungible.mixins.json" // Default matches the default value in the annotation
-//    }
-//}
+fletchingTable {
+    mixins.create("main") {
+        default = "${mod.id}.mixins.json"
+    }
+    mixins.create("client") {
+        default = "${mod.id}.client.mixins.json"
+    }
+}
 
 repositories {
     fun strictMaven(url: String, alias: String, vararg groups: String) = exclusiveContent {

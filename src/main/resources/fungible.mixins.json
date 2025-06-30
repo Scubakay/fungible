@@ -3,14 +3,7 @@
     "package": "net.darktree.fungible.mixin",
     "compatibilityLevel": "JAVA_17",
     "plugin": "net.darktree.fungible.FungibleMixinPlugin",
-    "mixins": [
-        "chunk_loading.MinecraftServerMixin",
-        "dfu.DatafixTypesMixin",
-        "dfu.LevelStorageMixin",
-        "dfu.SchemasMixin",
-        "dfu.UtilMixin",
-        "narrator.NarratorMixin"
-    ],
+    "mixins": [],
     "injectors": {
         "defaultRequire": 1
 	}
