@@ -1,23 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "fungible",
+	"id": "${id}",
 	"version": "${version}",
-	"name": "Fungible",
-	"description": "Gota restart fast - horrific hacks edition!",
+	"name": "${name}",
+	"description": "${description}",
 	"authors": [
-		"magistermaks",
-		"jacg311"
+		"Scubakay"
 	],
 	"contact": {
-		"website": "http://darktree.new"
+		"homepage": "${homepage}",
+		"sources": "${repository}",
+		"issues": "${repository}/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "${discord}"
+			}
+		}
 	},
 	"license": "LGPL-3.0",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.darktree.fungible.Fungible"
-		]
-	},
 	"mixins": [
 		"fungible.mixins.json"
 	],

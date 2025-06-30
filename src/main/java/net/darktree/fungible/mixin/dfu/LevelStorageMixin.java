@@ -2,12 +2,14 @@ package net.darktree.fungible.mixin.dfu;
 
 import com.mojang.datafixers.DataFixer;
 import com.mojang.serialization.Dynamic;
+import dev.kikugie.fletching_table.annotation.MixinEnvironment;
 import net.minecraft.datafixer.DataFixTypes;
 import net.minecraft.world.level.storage.LevelStorage;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
+@MixinEnvironment
 @Mixin(LevelStorage.class)
 public class LevelStorageMixin {
 

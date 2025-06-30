@@ -1,10 +1,11 @@
 package net.darktree.fungible.mixin.narrator;
 
 import com.mojang.text2speech.Narrator;
-import com.mojang.text2speech.NarratorDummy;
+import dev.kikugie.fletching_table.annotation.MixinEnvironment;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
+@MixinEnvironment
 @Mixin(value = Narrator.class, remap = false)
 public interface NarratorMixin {
 
@@ -14,7 +15,7 @@ public interface NarratorMixin {
 	 */
 	@Overwrite
 	static Narrator getNarrator() {
-		return new NarratorDummy();
+		return Narrator.EMPTY;
 	}
 
 }

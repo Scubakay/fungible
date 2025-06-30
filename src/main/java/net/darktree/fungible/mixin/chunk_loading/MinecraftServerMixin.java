@@ -1,10 +1,12 @@
 package net.darktree.fungible.mixin.chunk_loading;
 
+import dev.kikugie.fletching_table.annotation.MixinEnvironment;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.WorldGenerationProgressListener;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
+@MixinEnvironment
 @Mixin(MinecraftServer.class)
 public class MinecraftServerMixin {
 

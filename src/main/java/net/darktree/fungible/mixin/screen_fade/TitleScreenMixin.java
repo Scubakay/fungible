@@ -1,5 +1,6 @@
 package net.darktree.fungible.mixin.screen_fade;
 
+import dev.kikugie.fletching_table.annotation.MixinEnvironment;
 import net.minecraft.client.gui.LogoDrawer;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Final;
@@ -10,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+@MixinEnvironment("client")
 @Mixin(TitleScreen.class)
 public class TitleScreenMixin {
 
