@@ -6,10 +6,10 @@ plugins {
 }
 stonecutter active "dev" /* [SC] DO NOT EDIT */
 
-//stonecutter.tasks {
-//    order("publishModrinth")
-//    //order("publishCurseforge")
-//}
+stonecutter.tasks {
+    order("publishModrinth")
+    //order("publishCurseforge")
+}
 
 //region Run Active Configurations
 tasks.register("stonecutterRunActiveClient") {
