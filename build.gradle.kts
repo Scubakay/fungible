@@ -175,38 +175,38 @@ tasks.register<Copy>("buildAndCollect") {
 //endregion
 
 //region Publishing
-//publishMods {
-//    file = tasks.remapJar.get().archiveFile
-//    additionalFiles.from(tasks.remapSourcesJar.get().archiveFile)
-//    displayName = "${mod.name} ${mod.version} for ${env.title}"
-//    version = mod.version
-//    changelog = rootProject.file("CHANGELOG.md").readText()
-//    type = STABLE
-//    modLoaders.add("fabric")
-//
-//    dryRun = !env.publish
-//            || (env.modrinthId != "..." && providers.environmentVariable("MODRINTH_TOKEN").getOrNull() == null)
-//            || (env.curseforgeId != "..." && providers.environmentVariable("CURSEFORGE_TOKEN").getOrNull() == null)
-//
-//    modrinth {
-//        projectId = property("publish.modrinth").toString()
-//        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
-//        minecraftVersions.addAll(env.targets)
+publishMods {
+    file = tasks.remapJar.get().archiveFile
+    additionalFiles.from(tasks.remapSourcesJar.get().archiveFile)
+    displayName = "${mod.name} ${mod.version} for ${env.title}"
+    version = mod.version
+    changelog = rootProject.file("CHANGELOG.md").readText()
+    type = STABLE
+    modLoaders.add("fabric")
+
+    dryRun = !env.publish
+            || (env.modrinthId != "..." && providers.environmentVariable("MODRINTH_TOKEN").getOrNull() == null)
+            || (env.curseforgeId != "..." && providers.environmentVariable("CURSEFORGE_TOKEN").getOrNull() == null)
+
+    modrinth {
+        projectId = property("publish.modrinth").toString()
+        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        minecraftVersions.addAll(env.targets)
+        requires {
+            slug = "fabric-api"
+        }
+    }
+
+//    Uncomment publishing order in stonecutter.gradle.kts too if you want to publish to Curseforge
+//    curseforge {
+//        projectId = property("publish.curseforge").toString()
+//        accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+//        minecraftVersions.addAll(mod.targets)
 //        requires {
 //            slug = "fabric-api"
 //        }
 //    }
-//
-////    Uncomment publishing order in stonecutter.gradle.kts too if you want to publish to Curseforge
-////    curseforge {
-////        projectId = property("publish.curseforge").toString()
-////        accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
-////        minecraftVersions.addAll(mod.targets)
-////        requires {
-////            slug = "fabric-api"
-////        }
-////    }
-//}
+}
 
 publishing {
     repositories {

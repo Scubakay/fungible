@@ -1,4 +1,7 @@
 ## Fungible
+
+> This fork of [Fungible](https://github.com/magistermaks/mod-fungible) adds support for versions above 1.20
+
 This mod, with help of some mixin hacks, speeds up game and world loading
 times by selectively bricking parts of the game. Do not use outside the
 development environment - it will cause world corruption when upgrading 
