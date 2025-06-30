@@ -1,3 +1,5 @@
+import me.modmuss50.mpp.ReleaseType
+
 //import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
@@ -64,6 +66,7 @@ class Environment {
     val publish = property("mc.publish").toString().toBoolean() && property("mod.id").toString() != "template"
     val modrinthId = property("publish.modrinth").toString()
     val curseforgeId = property("publish.curseforge").toString()
+    val channel = ReleaseType.of(property("mc.channel").toString())
 }
 
 class ModDependencies(private val prefix: String) {
@@ -181,7 +184,7 @@ publishMods {
     displayName = "${mod.name} ${mod.version} for ${env.title}"
     version = mod.version
     changelog = rootProject.file("CHANGELOG.md").readText()
-    type = STABLE
+    type = env.channel
     modLoaders.add("fabric")
 
     dryRun = !env.publish
