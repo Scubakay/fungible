@@ -1,9 +1,14 @@
 package net.darktree.fungible.mixin.auth;
 
-import net.minecraft.client.util.ProfileKeysImpl;
 import net.minecraft.network.encryption.PlayerKeyPair;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+
+//? >= 1.20.2 {
+import net.minecraft.client.session.ProfileKeysImpl;
+//?} else {
+/*import net.minecraft.client.util.ProfileKeysImpl;
+ *///?}
 
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
