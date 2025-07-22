@@ -21,13 +21,6 @@
 	},
 	"license": "LGPL-3.0",
 	"environment": "*",
-	"mixins": [
-		"fungible.mixins.json",
-		{
-			"config": "fungible.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.15",
 		"minecraft": "${range}"
