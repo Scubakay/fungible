@@ -3,7 +3,7 @@ package net.darktree.fungible.mixin.dfu;
 import net.minecraft.world.level.storage.LevelStorage;
 import org.spongepowered.asm.mixin.Mixin;
 
-//? if <1.21.3 {
+//? if <1.20.3 {
 /*import com.mojang.datafixers.DataFixer;
 import com.mojang.serialization.Dynamic;
 import net.minecraft.datafixer.DataFixTypes;
