@@ -26,16 +26,14 @@ public class SplashOverlayMixin {
 	 */
 	@Inject(method="render", at=@At("HEAD"), cancellable=true)
 	//? if >=1.20 {
-	public void render(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+	public void fungible$render(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
 	//?} else {
-	/*public void render(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+	/*public void fungible$render(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
 	*///?}
-		//? if <1.20.2 {
-		/*if (reload.isComplete()) {
+		if (reload.isComplete()) {
 			MinecraftClient.getInstance().setOverlay(null);
 			ci.cancel();
 		}
-		*///?}
 	}
 
 }
