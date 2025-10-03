@@ -1,2 +1,1 @@
-- 1.21.9 Support
-- Fix SplashOverlayMixin
+- Update Fabric Loader version
