@@ -22,7 +22,6 @@ public class SplashOverlayMixin {
 
 	/**
 	 * Let's not waste time on fancy animations shall we?
-	 * TODO: Fix for >=1.20.2
 	 */
 	@Inject(method="render", at=@At("HEAD"), cancellable=true)
 	//? if >=1.20 {
