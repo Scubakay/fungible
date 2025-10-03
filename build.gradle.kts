@@ -7,10 +7,9 @@ plugins {
     //id("dev.kikugie.j52j")
     kotlin("jvm") version "2.1.21"
     id("com.google.devtools.ksp") version "2.1.21-2.0.2"
-    id("dev.kikugie.fletching-table.fabric") version "0.1.0-alpha.6"
+    id("dev.kikugie.fletching-table.fabric") version "0.1.0-alpha.17"
     id("me.modmuss50.mod-publish-plugin")
     //id("com.github.johnrengelman.shadow") version "8.1.1"
-
 }
 
 //region Shadow libraries
@@ -112,10 +111,10 @@ loom {
 
 fletchingTable {
     mixins.create("main") {
-        default = "${mod.id}.mixins.json"
+        mixin("default", "${mod.id}.mixins.json")
     }
     mixins.create("client") {
-        default = "${mod.id}.client.mixins.json"
+        mixin("default", "${mod.id}.client.mixins.json")
     }
 }
 

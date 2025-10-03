@@ -4,7 +4,7 @@ import net.minecraft.network.encryption.PlayerKeyPair;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-//? >= 1.20.2 {
+//? if >= 1.20.2 {
 import net.minecraft.client.session.ProfileKeysImpl;
 //?} else {
 /*import net.minecraft.client.util.ProfileKeysImpl;

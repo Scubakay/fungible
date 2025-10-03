@@ -1,19 +1,22 @@
 package net.darktree.fungible.mixin.dfu;
 
-import com.mojang.datafixers.DataFixer;
-import com.mojang.serialization.Dynamic;
-import net.minecraft.datafixer.DataFixTypes;
 import net.minecraft.world.level.storage.LevelStorage;
 import org.spongepowered.asm.mixin.Mixin;
+
+//? if <1.21.3 {
+/*import com.mojang.datafixers.DataFixer;
+import com.mojang.serialization.Dynamic;
+import net.minecraft.datafixer.DataFixTypes;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+*///?}
 
 /**
  * TODO: Fix >1.20.3
  */
 @Mixin(LevelStorage.class)
 public class LevelStorageMixin {
-//? < 1.20.3 {
+//? if < 1.20.3 {
 	/*/^*
 	 * Denied
 	 ^/
