@@ -10,15 +10,15 @@ a world, compared to the average 19s to do the same on vanilla. It also silences
 the annoying auth exception that takes focus away from the game log in IDEA.
 
 #### Included hacks:
-| Name                             | Desc                                                                     | Credit                                                         |
-|----------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------|
-| DataBreaker 2: Electric Boogaloo | Brick DataFixerUpper                                                     | mostly made myself, by i did look at how SuperCoder7979 did it |
-| Narratorn't                      | Brick the Narrator library (is it faster? idk)                           |                                                                |
-| ShutAuth                         | Brick game auth (this is to prevent that annoying exception on startup)  |                                                                |
-| SpawnChunksBeGone                | Skips spawn chunk loading                                                | (copied from TBPlugin)                                         |
-| FadeYeet                         | Yeets resource reload fade out animation                                 |                                                                |
-| ProfileUnkeyed                   | Skips message key pair request (to prevent another exception on startup) | jacg311                                                        |
-| I-know-what-im-doing             | Skip Accessibility-Onboarding & Experimental World Screens               | jacg311                                                        |
+| Name                                   | Desc                                                                     | Credit                                                         |
+|----------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------|
+| DataBreaker 2: Electric Boogaloo       | Brick DataFixerUpper                                                     | mostly made myself, by i did look at how SuperCoder7979 did it |
+| Narratorn't                            | Brick the Narrator library (is it faster? idk)                           |                                                                |
+| ShutAuth                               | Brick game auth (this is to prevent that annoying exception on startup)  |                                                                |
+| SpawnChunksBeGone (removed in 1.21.9+) | Skips spawn chunk loading                                                | (copied from TBPlugin)                                         |
+| FadeYeet                               | Yeets resource reload fade out animation                                 |                                                                |
+| ProfileUnkeyed                         | Skips message key pair request (to prevent another exception on startup) | jacg311                                                        |
+| I-know-what-im-doing                   | Skip Accessibility-Onboarding & Experimental World Screens               | jacg311                                                        |
 
 #### Credits:
 SuperCoder7979 (i taken a look at DataBreaker)

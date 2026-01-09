@@ -1,1 +1,1 @@
-- Update Fabric Loader version
+- Remove SpawnChunksBeGone for version >=1.21.9
